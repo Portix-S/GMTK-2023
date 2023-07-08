@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private Rigidbody2D rb;
+    private Rigidbody rb;
     private Animator animator;
     private Vector3 moveDirection;
 
@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
     }
     
@@ -63,7 +63,7 @@ public class PlayerMovement : MonoBehaviour
                 animator.SetBool("isRunning", false);
             }
 
-            moveDirection = new Vector3(movementX, movementY).normalized;
+            moveDirection = new Vector3(movementX, 0, movementY);
 
             // Animations
             if (movementX != 0f || movementY != 0f)
