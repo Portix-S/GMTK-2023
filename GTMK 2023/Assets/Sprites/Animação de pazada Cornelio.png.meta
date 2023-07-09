@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 0
@@ -47,11 +47,11 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
@@ -67,7 +67,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -101,20 +101,296 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: "Anima\xE7\xE3o de pazada Cornelio_0"
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 0
+        width: 1600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c48b9a4f4e7320aac889ad70c93b7cc3
+      internalID: -403545640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Anima\xE7\xE3o de pazada Cornelio_1"
+      rect:
+        serializedVersion: 2
+        x: 2587
+        y: 0
+        width: 1600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 097051581cdb31e37ba58dde3cf428ce
+      internalID: 821681825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Anima\xE7\xE3o de pazada Cornelio_2"
+      rect:
+        serializedVersion: 2
+        x: 4327
+        y: 0
+        width: 1600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44cf681c00ca8d26e8f4afd452de8f3b
+      internalID: -1184857529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Anima\xE7\xE3o de pazada Cornelio_3"
+      rect:
+        serializedVersion: 2
+        x: 6205
+        y: 0
+        width: 1600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c34a6543cf5572ecbef86d71f5ad890
+      internalID: 1642472020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Anima\xE7\xE3o de pazada Cornelio_4"
+      rect:
+        serializedVersion: 2
+        x: 8003
+        y: 0
+        width: 1600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1538eee180c4d265fa5ca8c62274c480
+      internalID: 1339543428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Anima\xE7\xE3o de pazada Cornelio_5"
+      rect:
+        serializedVersion: 2
+        x: 10144
+        y: 0
+        width: 1600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 179b2d26f24f3ae59a3e8346bddc72e0
+      internalID: 1002197564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Anima\xE7\xE3o de pazada Cornelio_6"
+      rect:
+        serializedVersion: 2
+        x: 11958
+        y: 0
+        width: 1397
+        height: 1250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f54e9c9f5c57a88b698e80b19f7b17b2
+      internalID: -1036973679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Anima\xE7\xE3o de pazada Cornelio_7"
+      rect:
+        serializedVersion: 2
+        x: 13434
+        y: 0
+        width: 1600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d54c2d99ef23e67bb335fa23e78d9c8
+      internalID: 1980135209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Anima\xE7\xE3o de pazada Cornelio_8"
+      rect:
+        serializedVersion: 2
+        x: 15297
+        y: 0
+        width: 1600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 141706373a4839c11a00c7f927e2ebff
+      internalID: -1180874183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Anima\xE7\xE3o de pazada Cornelio_9"
+      rect:
+        serializedVersion: 2
+        x: 17142
+        y: 0
+        width: 1600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db2a42f8669921f0dabe61073a695de7
+      internalID: -622698395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Anima\xE7\xE3o de pazada Cornelio_10"
+      rect:
+        serializedVersion: 2
+        x: 18960
+        y: 0
+        width: 1600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e82ee44d8c88c0f478f46888af0b43a5
+      internalID: -712268137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Anima\xE7\xE3o de pazada Cornelio_11"
+      rect:
+        serializedVersion: 2
+        x: 20758
+        y: 0
+        width: 1600
+        height: 1250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a37dc9f99eeca2dcbb7ee86bf5a2a79
+      internalID: 2053627902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: e6d2bbf695ca793e7a7fccac62d3fc24
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "Anima\xE7\xE3o de pazada Cornelio_10": -712268137
+      "Anima\xE7\xE3o de pazada Cornelio_8": -1180874183
+      "Anima\xE7\xE3o de pazada Cornelio_9": -622698395
+      "Anima\xE7\xE3o de pazada Cornelio_3": 1642472020
+      "Anima\xE7\xE3o de pazada Cornelio_6": -1036973679
+      "Anima\xE7\xE3o de pazada Cornelio_5": 1002197564
+      "Anima\xE7\xE3o de pazada Cornelio_1": 821681825
+      "Anima\xE7\xE3o de pazada Cornelio_11": 2053627902
+      "Anima\xE7\xE3o de pazada Cornelio_0": -403545640
+      "Anima\xE7\xE3o de pazada Cornelio_2": -1184857529
+      "Anima\xE7\xE3o de pazada Cornelio_4": 1339543428
+      "Anima\xE7\xE3o de pazada Cornelio_7": 1980135209
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

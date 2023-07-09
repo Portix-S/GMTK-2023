@@ -54,22 +54,23 @@ public class PlayerMovement : MonoBehaviour
             // Running Logic
             if (Input.GetKeyDown(KeyCode.LeftShift))
             {
+                animator.speed *= 2; 
                 moveSpeed *= 2f;
-                animator.SetBool("isRunning", true);
             }
             if (Input.GetKeyUp(KeyCode.LeftShift))
             {
+                animator.speed /= 2;
                 moveSpeed /= 2f;
-                animator.SetBool("isRunning", false);
             }
 
             moveDirection = new Vector3(movementX, 0, movementY);
 
-            // Animations
-            if (movementX != 0f || movementY != 0f)
-                animator.SetBool("isWalking", true);
+            if(movementY < 0f)
+                animator.SetInteger("isMoving", -1);
+            else if(movementY > 0f)
+                animator.SetInteger("isMoving", 1);
             else
-                animator.SetBool("isWalking", false);
+                animator.SetInteger("isMoving", 0);
 
             // Handling if needs to rotate player left/right
             if (movementX < 0f && !isFacingLeft)

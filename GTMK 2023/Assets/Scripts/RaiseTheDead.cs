@@ -18,7 +18,7 @@ public class RaiseTheDead : MonoBehaviour
     [SerializeField] TextMeshProUGUI dataUI;
     [SerializeField] TextMeshProUGUI mensagemUI;
 
-    public string nome, sobrenome, data, mensagem;
+    private string nome, sobrenome, data, mensagem;
 
     [SerializeField] Button raiseButton;
     [SerializeField] Button skipButton;
@@ -109,11 +109,12 @@ public class RaiseTheDead : MonoBehaviour
     }
 
     IEnumerator RaiseZombie(){
-        yield return new WaitForSeconds(1f); // Wait for animation duration
-        Instantiate(zombie, transform.position, transform.rotation);
+        yield return new WaitForSeconds(1.5f); // Wait for animation duration
+        Transform spawnPos = GetComponentsInChildren<Transform>()[2];
+        Instantiate(zombie, spawnPos.position, spawnPos.rotation);
     }
     public void Raise(){
-        // Trigger Raise Animation
+        GetComponentInChildren<Animator>().enabled = true;
         if(!this.isRaised){
             this.isRaised = true;
             CloseObituary();

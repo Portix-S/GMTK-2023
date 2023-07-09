@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 0
@@ -47,11 +47,11 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
@@ -67,7 +67,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -101,20 +101,692 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: "Anima\xE7\xE3o Cornelio caminhada e idle_0"
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 3954
+        width: 1025
+        height: 1043
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e50c8981734fe768ab134249dad650fa
+      internalID: 1062316150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Anima\xE7\xE3o Cornelio caminhada e idle_1"
+      rect:
+        serializedVersion: 2
+        x: 1239
+        y: 3954
+        width: 1026
+        height: 1002
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 322d141707f4fe006b307f5b0a87b113
+      internalID: 699269113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Anima\xE7\xE3o Cornelio caminhada e idle_2"
+      rect:
+        serializedVersion: 2
+        x: 2312
+        y: 3954
+        width: 1025
+        height: 1043
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6464be43063a543d896db93268c983d
+      internalID: -221711358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Anima\xE7\xE3o Cornelio caminhada e idle_3"
+      rect:
+        serializedVersion: 2
+        x: 3390
+        y: 3954
+        width: 1019
+        height: 1046
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4173fe3eb2bcfbdd895fd90cca48849
+      internalID: -1380092830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Anima\xE7\xE3o Cornelio caminhada e idle_4"
+      rect:
+        serializedVersion: 2
+        x: 4450
+        y: 3954
+        width: 1025
+        height: 1043
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90834513fd5130f038035ecf93bddea2
+      internalID: -1543758444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Anima\xE7\xE3o Cornelio caminhada e idle_5"
+      rect:
+        serializedVersion: 2
+        x: 5511
+        y: 3954
+        width: 1025
+        height: 1002
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1a39eab27d635da3b731e8758f119c3
+      internalID: 1924939145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Anima\xE7\xE3o Cornelio caminhada e idle_6"
+      rect:
+        serializedVersion: 2
+        x: 6577
+        y: 3954
+        width: 1025
+        height: 1043
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d3fb5fccbf2559fa83c878873881ac3
+      internalID: -2062083631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Anima\xE7\xE3o Cornelio caminhada e idle_7"
+      rect:
+        serializedVersion: 2
+        x: 7620
+        y: 3954
+        width: 1025
+        height: 1046
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 849747c25bb9c0c7da366223e65b6f20
+      internalID: -1191564502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Anima\xE7\xE3o Cornelio caminhada e idle_8"
+      rect:
+        serializedVersion: 2
+        x: 8681
+        y: 3954
+        width: 1025
+        height: 1043
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14237cd8f71ce0598b7e03495dd6ad32
+      internalID: -814839329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Anima\xE7\xE3o Cornelio caminhada e idle_9"
+      rect:
+        serializedVersion: 2
+        x: 9712
+        y: 3954
+        width: 1025
+        height: 1002
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d60b3794782dd470be01c768d375879
+      internalID: 272944325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 232
+        width: 1016
+        height: 1005
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 352c7c8d7bfc4c541b9fb1a29945cb69
+      internalID: -1130590492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Anima\xE7\xE3o Cornelio caminhada e idle_11"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2699
+        width: 1016
+        height: 1043
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 749cf80769905531cbca676e7f43a129
+      internalID: -1846344602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle1
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 1445
+        width: 1020
+        height: 1008
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20211dc97b1a37729aef73474d1c9c73
+      internalID: 1369749684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Anima\xE7\xE3o Cornelio caminhada e idle_13"
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 2699
+        width: 1020
+        height: 1008
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d248c9320f7e859948485525bb82beb2
+      internalID: -1027553706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle7
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 232
+        width: 1019
+        height: 1031
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70c719ce20168a2b7b4a12c4873fdfe3
+      internalID: 1479406578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle2
+      rect:
+        serializedVersion: 2
+        x: 1257
+        y: 1445
+        width: 1025
+        height: 1032
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e1cbe95aab1ab8a6961ff9e26e58483
+      internalID: -1179077230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Anima\xE7\xE3o Cornelio caminhada e idle_16"
+      rect:
+        serializedVersion: 2
+        x: 2095
+        y: 2699
+        width: 1025
+        height: 1055
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6c5baf3a7774b74cb69ae65dc96b2c2
+      internalID: -359295347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle8
+      rect:
+        serializedVersion: 2
+        x: 2136
+        y: 232
+        width: 1019
+        height: 1049
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a08060947f9adeda08194bfaa30e6a8d
+      internalID: 829831047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle3
+      rect:
+        serializedVersion: 2
+        x: 2323
+        y: 1445
+        width: 1024
+        height: 1055
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c75e991a9a24bf16783ecca645974858
+      internalID: 1146736442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Anima\xE7\xE3o Cornelio caminhada e idle_19"
+      rect:
+        serializedVersion: 2
+        x: 3155
+        y: 2699
+        width: 1026
+        height: 1043
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9ed85be5572d00588224dd5fbebc3bf
+      internalID: -1499307621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle9
+      rect:
+        serializedVersion: 2
+        x: 3202
+        y: 228
+        width: 1026
+        height: 1035
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37b3db6de7993bfe2a62f831aeba85d0
+      internalID: 915335585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle4
+      rect:
+        serializedVersion: 2
+        x: 3384
+        y: 1445
+        width: 1025
+        height: 1037
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19f610236c87a0143bafcdb29d30313e
+      internalID: 1769312933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Anima\xE7\xE3o Cornelio caminhada e idle_22"
+      rect:
+        serializedVersion: 2
+        x: 4210
+        y: 2699
+        width: 1025
+        height: 1008
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc5875ad90a1988c9886c44025eaa3f7
+      internalID: 742779399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle10
+      rect:
+        serializedVersion: 2
+        x: 4274
+        y: 232
+        width: 1026
+        height: 1005
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59535291aed3cf99cb4019ef28d63745
+      internalID: 600123557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle5
+      rect:
+        serializedVersion: 2
+        x: 4450
+        y: 1445
+        width: 1025
+        height: 1055
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4037ac46a1101ac1696576a65e937b5a
+      internalID: 57553701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Anima\xE7\xE3o Cornelio caminhada e idle_25"
+      rect:
+        serializedVersion: 2
+        x: 5282
+        y: 2699
+        width: 1025
+        height: 1043
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40c22d295964f6688a56ae6d1c61e8ac
+      internalID: -740574976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Anima\xE7\xE3o Cornelio caminhada e idle_26"
+      rect:
+        serializedVersion: 2
+        x: 6343
+        y: 2699
+        width: 1025
+        height: 1055
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 891bf39c4cd18953abbf8d0be7bca5a0
+      internalID: -1043041280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Anima\xE7\xE3o Cornelio caminhada e idle_27"
+      rect:
+        serializedVersion: 2
+        x: 7415
+        y: 2699
+        width: 1020
+        height: 1043
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd80dde3ef44e5bc4837c2cb4ce51f06
+      internalID: 925061778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Anima\xE7\xE3o Cornelio caminhada e idle_28"
+      rect:
+        serializedVersion: 2
+        x: 9575
+        y: 2698
+        width: 1008
+        height: 1038
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee12cb6b37afcff8b9c0790537f7a7ab
+      internalID: 686398081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Anima\xE7\xE3o Cornelio caminhada e idle_29"
+      rect:
+        serializedVersion: 2
+        x: 8487
+        y: 2699
+        width: 1025
+        height: 1008
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38a8e9de12ad9d5859fe0cd69b488240
+      internalID: -481626586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5ab9ddc0537e1419f956261074c6878f
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "Anima\xE7\xE3o Cornelio caminhada e idle_26": -1043041280
+      "Anima\xE7\xE3o Cornelio caminhada e idle_13": -1027553706
+      "Anima\xE7\xE3o Cornelio caminhada e idle_28": 686398081
+      "Anima\xE7\xE3o Cornelio caminhada e idle_6": -2062083631
+      "Anima\xE7\xE3o Cornelio caminhada e idle_22": 742779399
+      "Anima\xE7\xE3o Cornelio caminhada e idle_25": -740574976
+      "Anima\xE7\xE3o Cornelio caminhada e idle_8": -814839329
+      idle8: 829831047
+      idle6: -1130590492
+      idle7: 1479406578
+      "Anima\xE7\xE3o Cornelio caminhada e idle_0": 1062316150
+      "Anima\xE7\xE3o Cornelio caminhada e idle_1": 699269113
+      idle1: 1369749684
+      "Anima\xE7\xE3o Cornelio caminhada e idle_2": -221711358
+      "Anima\xE7\xE3o Cornelio caminhada e idle_9": 272944325
+      idle2: -1179077230
+      "Anima\xE7\xE3o Cornelio caminhada e idle_5": 1924939145
+      "Anima\xE7\xE3o Cornelio caminhada e idle_11": -1846344602
+      idle9: 915335585
+      idle3: 1146736442
+      "Anima\xE7\xE3o Cornelio caminhada e idle_7": -1191564502
+      idle4: 1769312933
+      idle10: 600123557
+      "Anima\xE7\xE3o Cornelio caminhada e idle_4": -1543758444
+      "Anima\xE7\xE3o Cornelio caminhada e idle_19": -1499307621
+      idle5: 57553701
+      "Anima\xE7\xE3o Cornelio caminhada e idle_27": 925061778
+      "Anima\xE7\xE3o Cornelio caminhada e idle_29": -481626586
+      "Anima\xE7\xE3o Cornelio caminhada e idle_16": -359295347
+      "Anima\xE7\xE3o Cornelio caminhada e idle_3": -1380092830
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

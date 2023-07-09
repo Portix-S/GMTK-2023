@@ -8,9 +8,11 @@ public class Pazada : MonoBehaviour
     private BoxCollider pa;
     public GameManager gm;
     private float kbMaxForce = 20f, kbForce= 5f, kbDelay = .5f;
+    private Animator animator;
 
     private void Start() {
         pa = GetComponent<BoxCollider>();
+        animator = GetComponentInParent<Animator>();
         kbMaxForce = 20f;
         kbForce = 5f;
     }
@@ -31,6 +33,7 @@ public class Pazada : MonoBehaviour
         if(Input.GetKeyUp(KeyCode.Mouse0) && attackTimer <= 0f && !gm.isMenuOpen){
             Debug.Log("Attacking...");
             attackTimer = attackDuration;
+            animator.SetBool("isAttacking", true);
             isAttacking = true;
             pa.enabled = true;
         }
@@ -39,6 +42,7 @@ public class Pazada : MonoBehaviour
             attackTimer -= Time.deltaTime;
         }
         else if(isAttacking){
+            animator.SetBool("isAttacking", false);
             isAttacking = false;
             pa.enabled = false;
             kbForce = 10f;

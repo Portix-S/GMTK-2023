@@ -72,6 +72,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   follow: {fileID: 0}
   state: 0
+  job: 0
 --- !u!65 &5068538982806247432
 BoxCollider:
   m_ObjectHideFlags: 0
