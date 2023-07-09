@@ -71,6 +71,13 @@ public class GameManager : MonoBehaviour
         "WRENCHES. ARE NOT. EDIBLE."
     };
 
+    public bool isMenuOpen;
+
+    public int points;
+    private void Start() {
+        points = 0;
+    }
+
     public string GenerateFirstName(){
         int index = Random.Range(0, firstName.Length);
         return firstName[index];
@@ -139,5 +146,4 @@ public class GameManager : MonoBehaviour
         string date = birthDate + " - " + deathDate;
         return date;
     }
-
 }

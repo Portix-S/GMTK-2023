@@ -6,17 +6,29 @@ public class Pazada : MonoBehaviour
 {
     private bool isAttacking;
     private BoxCollider pa;
-    public float kbForce = 10f, kbDelay = .5f;
+    public GameManager gm;
+    private float kbMaxForce = 20f, kbForce= 5f, kbDelay = .5f;
 
     private void Start() {
         pa = GetComponent<BoxCollider>();
+        kbMaxForce = 20f;
+        kbForce = 5f;
     }
 
-    private float attackDuration = 1f;
-    private float attackTimer;
+    private float attackDuration = .5f;
+    private float attackTimer = 0f;
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Mouse0) && attackTimer <= 0f){
+        if(Input.GetKey(KeyCode.Mouse0) && attackTimer <= 0f && !gm.isMenuOpen){
+            Debug.Log("GetKey");
+            if(kbForce < kbMaxForce){
+                Debug.Log(kbForce);
+                kbForce += Time.deltaTime * 20f;
+            }
+            else kbForce = kbMaxForce;
+        }
+        
+        if(Input.GetKeyUp(KeyCode.Mouse0) && attackTimer <= 0f && !gm.isMenuOpen){
             Debug.Log("Attacking...");
             attackTimer = attackDuration;
             isAttacking = true;
@@ -29,6 +41,7 @@ public class Pazada : MonoBehaviour
         else if(isAttacking){
             isAttacking = false;
             pa.enabled = false;
+            kbForce = 10f;
         }
     }
 
@@ -45,9 +58,8 @@ public class Pazada : MonoBehaviour
             StartCoroutine(KnockBackCooldown(zombieRb));
 
             ZombieAI zombieAi = other.gameObject.GetComponent<ZombieAI>();
-            if(zombieAi.state != ZombieAI.states.FOLLOW){
-                StartCoroutine(zombieAi.Follow());
-            }
+            StopCoroutine(zombieAi.Follow());
+            StartCoroutine(zombieAi.Follow());
         }
     }
 

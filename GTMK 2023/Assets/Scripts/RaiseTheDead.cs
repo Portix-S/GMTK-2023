@@ -8,35 +8,42 @@ public class RaiseTheDead : MonoBehaviour
 {
 
     private bool canTrigger;
-    private bool isGraveOpen;
     public GameManager gm;
+    public GameObject zombie;
+    public bool isRaised;
 
     [SerializeField] GameObject obituary;
-    [SerializeField] TextMeshProUGUI nome;
-    [SerializeField] TextMeshProUGUI sobrenome;
-    [SerializeField] TextMeshProUGUI data;
-    [SerializeField] TextMeshProUGUI mensagem;
+    [SerializeField] TextMeshProUGUI nomeUI;
+    [SerializeField] TextMeshProUGUI sobrenomeUI;
+    [SerializeField] TextMeshProUGUI dataUI;
+    [SerializeField] TextMeshProUGUI mensagemUI;
 
-    // Generate the description
-    // Name values
-    // Family Name values
-    // Birth date / Death date
-        // Age
-    // Death Message
+    public string nome, sobrenome, data, mensagem;
+
+    [SerializeField] Button raiseButton;
+    [SerializeField] Button skipButton;
+
     public enum jobs {NA, DOCTOR, LAWYER, MECHANIC, KID, OLDMAN};
     public jobs job;
 
     void Start()
     {
         obituary.SetActive(false);
-        job = jobs.NA;
-        canTrigger = false;
-        isGraveOpen = false;
+        gm.isMenuOpen = false;
+        this.job = jobs.NA;
+        this.canTrigger = false;
+        this.isRaised = false;
     }
 
     private void OnTriggerEnter(Collider other) {
         if(other.gameObject.tag == "Player"){
-            canTrigger = true;
+            this.canTrigger = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other) {
+        if(other.gameObject.tag == "Player"){
+            this.canTrigger = false;
         }
     }
 
@@ -45,28 +52,72 @@ public class RaiseTheDead : MonoBehaviour
     {
         if(canTrigger){
             if(Input.GetKeyDown(KeyCode.E)){
-                if(job == jobs.NA) GenerateObituary();
-                isGraveOpen = true;
-                Time.timeScale = 0f;
-                // See obituary
-                obituary.SetActive(true);
+                if(this.job == jobs.NA) {
+                    GenerateObituary();
+                }
+                raiseButton.onClick.AddListener(Raise);
+                skipButton.onClick.AddListener(CloseObituary);
+                this.UpdateUI();
+                Debug.Log(isRaised);
+                OpenObituary();
             }
-            if(isGraveOpen && Input.GetKeyDown(KeyCode.Escape)){
-                isGraveOpen = false;
-                Time.timeScale = 1f;
-                // Closes obituary
-                obituary.SetActive(false);
+            if(gm.isMenuOpen && Input.GetKeyDown(KeyCode.Escape)){
+                CloseObituary();
             }
             
         }
     }
 
+    public void OpenObituary(){
+        Time.timeScale = 0f;
+        // See obituary
+        obituary.SetActive(true);
+        gm.isMenuOpen = true;
+    }
+
+    public void CloseObituary(){
+        Time.timeScale = 1f;
+        raiseButton.onClick.RemoveAllListeners();
+        skipButton.onClick.RemoveAllListeners();
+        // Closes obituary
+        obituary.SetActive(false);
+        gm.isMenuOpen = false;
+    }
+
     private void GenerateObituary(){
-        job = (jobs) Random.Range(1, 6);
+        this.job = (jobs) Random.Range(1, 6);
         Debug.Log(job);
-        nome.text = gm.GenerateFirstName();
-        sobrenome.text = gm.GenerateLastName();
-        data.text = gm.GenerateDate(job);
-        mensagem.text = gm.GenerateMessage(job);
+        this.nome = gm.GenerateFirstName();
+        this.sobrenome = gm.GenerateLastName();
+        this.data = gm.GenerateDate(job);
+        this.mensagem = gm.GenerateMessage(job);
+        this.UpdateUI();
+
+        Debug.Log(nome + " " + sobrenome);
+        Debug.Log(data);
+        Debug.Log(mensagem);
+    }
+
+    private void UpdateUI(){
+        print(job);
+        nomeUI.text = this.nome;
+        sobrenomeUI.text = this.sobrenome;
+        dataUI.text = this.data;
+        mensagemUI.text = this.mensagem;
+
+        raiseButton.enabled = !this.isRaised;
+    }
+
+    IEnumerator RaiseZombie(){
+        yield return new WaitForSeconds(1f); // Wait for animation duration
+        Instantiate(zombie, transform.position, transform.rotation);
+    }
+    public void Raise(){
+        // Trigger Raise Animation
+        if(!this.isRaised){
+            this.isRaised = true;
+            CloseObituary();
+            StartCoroutine(RaiseZombie());
+        }
     }
 }

@@ -10,6 +10,7 @@ public class ZombieAI : MonoBehaviour
     public enum states {IDLE, WANDER, FOLLOW};
     public states state;
 
+    public RaiseTheDead.jobs job;
 
     private bool isFacingLeft = false;
     private SpriteRenderer zombieSprite;
@@ -18,6 +19,7 @@ public class ZombieAI : MonoBehaviour
     void Start()
     {
         zombie = GetComponent<NavMeshAgent>();
+        follow = GameObject.FindGameObjectWithTag("Player").transform;
 
         // state = states.IDLE;
         StartCoroutine(Follow());

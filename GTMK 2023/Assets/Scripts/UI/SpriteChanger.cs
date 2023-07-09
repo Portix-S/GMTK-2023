@@ -7,18 +7,17 @@ public class SpriteChanger : MonoBehaviour
 {
     // This Script get the sprites that will be changed on the character
 
-    [SerializeField] Sprite sprite;
+    private Sprite sprite;
+    public OpenMenu shop;
+    public RaiseTheDead.jobs assignedJob;
     InteractionMenu menuScript;
-    private void Start()
-    {
-        if(gameObject.tag != "Weapon")
-            sprite = ((Image)GetComponent<Button>().targetGraphic).sprite;
-        menuScript = GameObject.FindGameObjectWithTag("Menu").GetComponent<InteractionMenu>();
+    private void Start(){
+        sprite = GetComponentInChildren<Image>().sprite;
     }
 
-    public void ChangeSprite()
-    {
-        menuScript.currentSprite = sprite;
+    public void ChangeSprite(){
+        shop.selectedSprite = sprite;
+        shop.checkJob = assignedJob;
     }
 
 }
