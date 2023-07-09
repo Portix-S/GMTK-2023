@@ -15,6 +15,8 @@ public class ZombieAI : MonoBehaviour
     private bool isFacingLeft = false;
     private SpriteRenderer zombieSprite;
 
+    public bool isTakingKnockBack = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -45,7 +47,7 @@ public class ZombieAI : MonoBehaviour
     }
 
     private IEnumerator AttentionSpan(){
-        yield return new WaitForSeconds(Random.Range(5f, 10f)); // 10 - 60 sec
+        yield return new WaitForSeconds(Random.Range(10f, 60f)); // 10 - 60 sec
         StopFollowing();
     } 
 

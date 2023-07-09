@@ -22,9 +22,7 @@ public class Pazada : MonoBehaviour
     void Update()
     {
         if(Input.GetKey(KeyCode.Mouse0) && attackTimer <= 0f && !gm.isMenuOpen){
-            Debug.Log("GetKey");
             if(kbForce < kbMaxForce){
-                Debug.Log(kbForce);
                 kbForce += Time.deltaTime * 20f;
             }
             else kbForce = kbMaxForce;
@@ -56,19 +54,20 @@ public class Pazada : MonoBehaviour
             Vector3 zombiePos = other.gameObject.transform.position;
             Vector3 knockbackDir = new Vector3(zombiePos.x - playerPos.x, 0, zombiePos.z - playerPos.z).normalized;
 
-            Debug.Log(knockbackDir);
             Rigidbody zombieRb = other.gameObject.GetComponentInChildren<Rigidbody>();
-            zombieRb.AddForce(knockbackDir * kbForce, ForceMode.Impulse);
-            StartCoroutine(KnockBackCooldown(zombieRb));
-
             ZombieAI zombieAi = other.gameObject.GetComponent<ZombieAI>();
+            zombieRb.AddForce(knockbackDir * kbForce, ForceMode.Impulse);
+            zombieAi.isTakingKnockBack = true;
+            StartCoroutine(KnockBackCooldown(zombieRb, zombieAi));
+
             StopCoroutine(zombieAi.Follow());
             StartCoroutine(zombieAi.Follow());
         }
     }
 
-    IEnumerator KnockBackCooldown(Rigidbody rb){
+    IEnumerator KnockBackCooldown(Rigidbody rb, ZombieAI zai){
         yield return new WaitForSeconds(kbDelay);
+        zai.isTakingKnockBack = false;
         rb.velocity = Vector3.zero;
     }
 }

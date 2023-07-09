@@ -31,9 +31,13 @@ public class OpenMenu : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) {
         if(other.gameObject.tag == "Zombie" && !gm.isMenuOpen){
+            ZombieAI zombieAi = other.gameObject.GetComponent<ZombieAI>();
+            if(!zombieAi.isTakingKnockBack){
+                return;
+            }
+            zombieJob = zombieAi.job;
             zombieRenderer = other.gameObject.transform.GetChild((int) menuT).GetComponent<SpriteRenderer>();
             currentSprite = zombieRenderer.sprite;
-            zombieJob = other.gameObject.GetComponent<ZombieAI>().job;
             OpenBuyMenu();
         }
     }

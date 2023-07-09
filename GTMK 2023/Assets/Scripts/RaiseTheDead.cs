@@ -85,7 +85,7 @@ public class RaiseTheDead : MonoBehaviour
     }
 
     private void GenerateObituary(){
-        this.job = (jobs) Random.Range(1, 6);
+        this.job = (jobs) ((Random.Range(1, 1000) % 5) + 1 );
         Debug.Log(job);
         this.nome = gm.GenerateFirstName();
         this.sobrenome = gm.GenerateLastName();
@@ -99,7 +99,6 @@ public class RaiseTheDead : MonoBehaviour
     }
 
     private void UpdateUI(){
-        print(job);
         nomeUI.text = this.nome;
         sobrenomeUI.text = this.sobrenome;
         dataUI.text = this.data;

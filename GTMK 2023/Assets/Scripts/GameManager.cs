@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -73,9 +75,30 @@ public class GameManager : MonoBehaviour
 
     public bool isMenuOpen;
 
+    public float timerInMinutes = 5f;
+    private float timer;
+    [SerializeField] TextMeshProUGUI timerUI;
+
     public int points;
+    public int totalPoints;
     private void Start() {
+        timer = timerInMinutes * 60;
         points = 0;
+    }
+
+    private void Update() {
+        timer -= Time.deltaTime;
+        int minutos = (int) timer/60;
+        int segundos = (int) (timer - (minutos*60));
+        timerUI.text = minutos.ToString("00") + ":" + segundos.ToString("00");
+
+        if(Input.GetKeyDown(KeyCode.Escape) && !isMenuOpen){
+            Pause();
+        }
+
+        if(timer <= 0){
+            EndLevel();
+        }
     }
 
     public string GenerateFirstName(){
@@ -145,5 +168,86 @@ public class GameManager : MonoBehaviour
         string deathDate = deathDay.ToString() + "/" + deathMonth.ToString() + "/" + deathYear.ToString();
         string date = birthDate + " - " + deathDate;
         return date;
+    }
+
+    // ---- Menu functionalities
+    [SerializeField] GameObject pauseUI;
+    public void Pause(){
+        if(!isMenuOpen){
+            isMenuOpen = true;
+            Time.timeScale = 0f;
+            pauseUI.SetActive(true);
+        }
+        else{
+            if(pauseUI.activeSelf == false){
+                ClearUIs();
+                isMenuOpen = true;
+                Time.timeScale = 0f;
+                pauseUI.SetActive(true);
+            }
+            else{
+                isMenuOpen = false;
+                Time.timeScale = 1f;
+                pauseUI.SetActive(false);
+            }
+        }
+    }
+
+    public void RestartLevel(){
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void QuitToMenu(){
+        SceneManager.LoadScene("Menu");
+    }
+
+    [SerializeField] GameObject questEndUI;
+    [SerializeField] TextMeshProUGUI deliverMessage;
+    [SerializeField] TextMeshProUGUI pontuacaoQuest;
+    public void Deliver(){
+        totalPoints += points;
+        if(!isMenuOpen){
+            isMenuOpen = true;
+            Time.timeScale = 0f;
+
+            if(points >= 60){
+                deliverMessage.text = "Reintegrated!\n 'Yep, definitely a human!'";
+                totalPoints += 50;
+            }
+            else if(points >= 0){
+                deliverMessage.text = "Reintegrated!\n 'Wait, what's that smell?'";
+                totalPoints += 0;
+            }
+            else{
+                deliverMessage.text = "Oops!\n 'BRAAAAAINS!'";
+                totalPoints -= 50;
+            }
+            pontuacaoQuest.text = "SCORE: " + points.ToString();
+            questEndUI.SetActive(true);
+            points = 0;
+        }
+        else{
+            isMenuOpen = false;
+            Time.timeScale = 1f;
+            questEndUI.SetActive(false);
+        }
+    }
+
+    [SerializeField] GameObject finishUI;
+    [SerializeField] TextMeshProUGUI pontuacaoFinal;
+    public void EndLevel(){
+        ClearUIs();
+        Time.timeScale = 0f;
+
+        isMenuOpen = true;
+        finishUI.SetActive(true);
+        pontuacaoFinal.text = "TOTAL SCORE:\n " + totalPoints.ToString();
+    }
+
+    public void ClearUIs(){
+        foreach (GameObject go in GameObject.FindGameObjectsWithTag("UI")){
+            go.SetActive(false);
+        }
+        isMenuOpen = false;
     }
 }
