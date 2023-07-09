@@ -36,8 +36,8 @@ public class OpenMenu : MonoBehaviour
                 return;
             }
             zombieJob = zombieAi.job;
-            zombieRenderer = other.gameObject.transform.GetChild((int) menuT).GetComponent<SpriteRenderer>();
-            currentSprite = zombieRenderer.sprite;
+            //zombieRenderer = other.gameObject.transform.GetChild((int) menuT + 1).GetComponent<SpriteRenderer>();
+            //currentSprite = zombieRenderer.sprite;
             OpenBuyMenu();
         }
     }
@@ -55,17 +55,23 @@ public class OpenMenu : MonoBehaviour
     }
 
     public void HandleSelected(){
-        zombieRenderer.sprite = selectedSprite;
+        //zombieRenderer.sprite = selectedSprite;
     }
 
     public void ApplyChanges(){
         if(checkJob == zombieJob) gm.points += pontuationValue;
         else gm.points -= pontuationValue;
-        currentSprite = selectedSprite;
-        zombieRenderer.sprite = selectedSprite;
+
+        CloseBuyMenu();
+        //currentSprite = selectedSprite;
+        //zombieRenderer.sprite = selectedSprite;
     }
 
     public void UndoChanges(){
-        zombieRenderer.sprite = currentSprite;
+        if(checkJob == zombieJob) gm.points -= pontuationValue;
+        else gm.points += pontuationValue;
+
+        CloseBuyMenu();
+        //zombieRenderer.sprite = currentSprite;
     }
 }
