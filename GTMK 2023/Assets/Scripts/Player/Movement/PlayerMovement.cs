@@ -65,7 +65,7 @@ public class PlayerMovement : MonoBehaviour
 
             moveDirection = new Vector3(movementX, 0, movementY);
 
-            if(movementY < 0f)
+            if(movementY < 0f || movementX != 0)
                 animator.SetInteger("isMoving", -1);
             else if(movementY > 0f)
                 animator.SetInteger("isMoving", 1);

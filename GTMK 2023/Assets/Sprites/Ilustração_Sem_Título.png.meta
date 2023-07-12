@@ -1,0 +1,839 @@
+fileFormatVersion: 2
+guid: c4cabe8520cde65ff9faa559941b29f7
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_0"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 452
+        width: 50
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0209f4592675b86c8896e2670a8acdb0
+      internalID: 1617604234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_1"
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 452
+        width: 49
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b67fbf2e11c975e7abed63b74d0e1459
+      internalID: -1146647176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_2"
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 452
+        width: 48
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bd1c38aabba94a678b6747ab387a9d3
+      internalID: 1250200674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_3"
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 452
+        width: 49
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de373057c8210325e9651bec394b4002
+      internalID: -707282752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_4"
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 451
+        width: 50
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56736fe4548e08c9daa53c8da0dc66dd
+      internalID: -1908346001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_5"
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 452
+        width: 50
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd484d223028d89bda1b95b715d2cb09
+      internalID: 193563559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_6"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 385
+        width: 50
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef9a8c61ebca083cab9b2e572f4c5440
+      internalID: 2105843496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_7"
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 385
+        width: 49
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dda11975dc9a2b198adfdf1f1b5d5bbd
+      internalID: -630105235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_8"
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 385
+        width: 48
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eb7d24016645d00eafefde19d9a2bb6
+      internalID: -1549287642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_9"
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 385
+        width: 49
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7d6f2406d5c36eabafe22f473b7021b
+      internalID: 620832658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_10"
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 384
+        width: 51
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e4ab1ec28586ee728467e62aaa5ca49
+      internalID: -1553411592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_11"
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 385
+        width: 50
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 960c3878e8f830dc8912dd0d36842562
+      internalID: 1579373624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_12"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 318
+        width: 50
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8444b4fb0d3d5ee65bcef0757e7aaa3e
+      internalID: 560577966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_13"
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 318
+        width: 49
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed6d626099efd164bacdb5e689bd878d
+      internalID: -1718736768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_14"
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 318
+        width: 49
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6678d8ebd4b89147828291f6f3282fe
+      internalID: 722061285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_15"
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 318
+        width: 50
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27b5864c84112d04fa327352c638eab8
+      internalID: -1757082275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_16"
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 318
+        width: 51
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aaeb9d0a02e31ddc9885a147e6dfeeb
+      internalID: -530000575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_17"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 250
+        width: 49
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 075e3fc665952be24b3d8334add60a38
+      internalID: -681723512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_18"
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 251
+        width: 49
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb0cb80751f5f4ccb909f69411ae129c
+      internalID: -27405900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_19"
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 251
+        width: 48
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6956187e489308157a698546f598fe2a
+      internalID: -1406977874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_20"
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 251
+        width: 49
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 145eeae4909b2be1699fffeb72a34806
+      internalID: -443331619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_21"
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 251
+        width: 50
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9f5939544fd8c2d28db8b390d8fca2d
+      internalID: -1587748631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_22"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 184
+        width: 50
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 990aaf14d156c55d9968e538a5481863
+      internalID: 1364278967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_23"
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 184
+        width: 49
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b741be2a6b9f9a494bfc4b3ec842d29d
+      internalID: 542076737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_24"
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 184
+        width: 48
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1bbf9322929028fd892eadb073771d0
+      internalID: 889053189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_25"
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 184
+        width: 49
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78e7e83d662d6cf22907ce3ec2316d55
+      internalID: 367544099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_26"
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 184
+        width: 50
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7552c05f27c804ce88b1aac620a20098
+      internalID: 1429140203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_27"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 125
+        width: 49
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e082bd103cb975fc8d8139c21ef9e14
+      internalID: -1048643818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_28"
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 125
+        width: 49
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70385d8c11e3570feb49965bf25fe7bb
+      internalID: -1587299357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_29"
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 125
+        width: 48
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf497dfd1acbb068ab60c3f7fb357a33
+      internalID: 1862422824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_30"
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 125
+        width: 49
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34154b05041018b8c9dc5141a8e562d1
+      internalID: 613288753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_31"
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 125
+        width: 50
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42a2aefe89db2ec65b0e526d57628d9f
+      internalID: -21769824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 56991c589aa02c348837b8bed682ccc1
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_11": 1579373624
+      "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_10": -1553411592
+      "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_2": 1250200674
+      "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_0": 1617604234
+      "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_25": 367544099
+      "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_17": -681723512
+      "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_9": 620832658
+      "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_8": -1549287642
+      "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_23": 542076737
+      "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_29": 1862422824
+      "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_4": -1908346001
+      "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_18": -27405900
+      "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_19": -1406977874
+      "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_14": 722061285
+      "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_24": 889053189
+      "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_3": -707282752
+      "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_22": 1364278967
+      "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_7": -630105235
+      "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_27": -1048643818
+      "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_1": -1146647176
+      "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_16": -530000575
+      "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_30": 613288753
+      "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_12": 560577966
+      "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_13": -1718736768
+      "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_31": -21769824
+      "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_28": -1587299357
+      "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_6": 2105843496
+      "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_5": 193563559
+      "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_15": -1757082275
+      "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_20": -443331619
+      "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_26": 1429140203
+      "Ilustrac\u0327a\u0303o_Sem_Ti\u0301tulo_21": -1587748631
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
